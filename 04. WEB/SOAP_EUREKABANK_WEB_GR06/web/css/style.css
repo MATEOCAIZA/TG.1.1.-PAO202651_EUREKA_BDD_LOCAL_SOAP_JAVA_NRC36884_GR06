@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+    font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+    background: url("../images/sully.png") no-repeat center top;
+    background-size: auto;
+    background-attachment: fixed;
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 320px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+h2 {
+    color: #6c5ce7;
+    text-shadow: 2px 2px 4px #a29bfe;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 15px;
+    border: 1px solid #b2bec3;
+    font-size: 16px;
+}
+
+input[type="submit"], button, .menu-button {
+    background-color: #00cec9;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, button:hover, .menu-button:hover {
+    background-color: #0984e3;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.error {
+    color: #d63031;
+    font-weight: bold;
+}
+
+.success {
+    color: #00b894;
+    font-weight: bold;
+}
+
+img.logo {
+    width: 110px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+img.logo:hover {
+    transform: rotate(-3deg) scale(1.1);
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Menú */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-grid a {
+    text-decoration: none;
+}
+
+.menu-button {
+    display: block;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #00cec9;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-button:hover {
+    background-color: #0984e3;
+    transform: scale(1.08);
+}
+
+/* Etiqueta de usuario */
+.top-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+.movimientos-page .container {
+    max-width: 980px;
+    width: min(92vw, 980px);
+    margin: 60px auto;
+    padding: 30px 12px 25px;
+    box-sizing: border-box;
+}
+
+.movimientos-page .table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 20px;
+    padding-bottom: 8px;
+    display: block;
+}
+
+/* Tabla de movimientos */
+.movimientos-page table {
+    width: 100%;
+    min-width: 760px;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+    display: table;
+}
+
+.movimientos-page table th,
+.movimientos-page table td {
+    white-space: nowrap;
+}
+
+.movimientos-page th, .movimientos-page td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.movimientos-page th {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+/* Botón alternativo (por ejemplo: cerrar sesión, retroceso, etc.) */
+.button-alt {
+    background-color: #fd79a8; /* rosa Boo */
+}
+
+.button-alt:hover {
+    background-color: #e84393;
+}
