@@ -185,6 +185,7 @@ public class Login extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        HudTheme.install(); // tema común EurekaBank
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

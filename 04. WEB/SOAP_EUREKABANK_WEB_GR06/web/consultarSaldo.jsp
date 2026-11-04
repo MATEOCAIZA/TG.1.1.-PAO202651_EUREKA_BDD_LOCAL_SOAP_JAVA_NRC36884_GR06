@@ -4,10 +4,11 @@
 <head>
     <title>Consultar Saldo</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eureka-hud.css">
 </head>
 <body>
     <div class="container">
-        <img src="images/sullivan.png" alt="Sullivan" class="logo"/>
+        <img src="images/hud.jpg" alt="Sullivan" class="logo"/>
         <h2>Consulta de Saldo</h2>
 
         <form action="ConsultarSaldoServlet" method="post">

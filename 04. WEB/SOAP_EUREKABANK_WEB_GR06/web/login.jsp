@@ -4,10 +4,11 @@
 <head>
     <title>Login - Monsters Inc</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eureka-hud.css">
 </head>
 <body>
     <div class="container">
-        <img src="images/sullivan.png" alt="Sullivan" class="logo"/>
+        <img src="images/hud.jpg" alt="Sullivan" class="logo"/>
         <h2>Ingreso al Banco - Monsters Inc</h2>
         <form action="LoginServlet" method="post">
             <input type="text" name="usuario" placeholder="Usuario"><br>

@@ -4,6 +4,7 @@
 <head>
     <title>Depósito de Dinero</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eureka-hud.css">
 </head>
 <body>
     <div class="container">

@@ -11,11 +11,12 @@
 <head>
     <title>Menú Principal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eureka-hud.css">
    
 </head>
 <body>
     <div class="container">
-        <img src="images/sullivan.png" class="logo" alt="Sullivan"/>
+        <img src="images/hud.jpg" class="logo" alt="Sullivan"/>
         <h2>Bienvenido al Banco - Monsters Inc</h2>
         <p class="top-label">Usuario: <strong><%= usuario %></strong></p>
 

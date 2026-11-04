@@ -83,6 +83,7 @@ INSERT INTO empleado VALUES( '0011', 'Carrasco', 'Vargas', 'Pedro Hugo', 'Chicla
 INSERT INTO empleado VALUES( '0012', 'Mendoza', 'Jara', 'Monica Valeria', 'Lima', 'Calle Las Toronjas 450' );
 INSERT INTO empleado VALUES( '0013', 'Espinoza', 'Melgar', 'Victor Eduardo', 'Huancayo', 'Av. San Martin 6734 Dpto. 508 ' );
 INSERT INTO empleado VALUES( '0014', 'Hidalgo', 'Sandoval', 'Milagros Leonor', 'Chiclayo', 'Av. Luis Gonzales 1230' );
+INSERT INTO empleado VALUES( '0015', 'Monster', 'Monster', 'MONSTER', 'Sangolqui', 'ESPE' );
 
 
 -- Tabla: Usuario
@@ -99,6 +100,7 @@ INSERT INTO usuario VALUES( '0008',  'csarmiento',   SHA('chinita'), 'ANULADO' )
 INSERT INTO usuario VALUES( '0009',  'lpachas',      SHA('gato'), 'ACTIVO' );
 INSERT INTO usuario VALUES( '0010',  'htello',       SHA('machupichu'), 'ACTIVO' );
 INSERT INTO usuario VALUES( '0011',  'pcarrasco',    SHA('tinajones'), 'ACTIVO' );
+INSERT INTO usuario VALUES( '0015',  'MONSTER',      SHA('MONSTER69'), 'ACTIVO' );
 
 -- Tabla: Modulo
 
