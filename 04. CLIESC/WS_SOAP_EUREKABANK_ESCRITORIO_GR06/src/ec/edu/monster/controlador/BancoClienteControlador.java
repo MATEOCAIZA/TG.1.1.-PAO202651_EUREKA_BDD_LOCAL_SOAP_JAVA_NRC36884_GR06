@@ -3,6 +3,8 @@ package ec.edu.monster.controlador;
 import ec.edu.monster.ws.Movimiento;
 import ec.edu.monster.ws.WSEureka;
 import ec.edu.monster.ws.WSEureka_Service;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 public class BancoClienteControlador {
@@ -10,8 +12,15 @@ public class BancoClienteControlador {
     private final WSEureka_Service servicio;
     private final WSEureka port;
 
+    // IP:puerto del servidor SOAP; se cambia con -Dservidor=IP:8080 al ejecutar
+    public static final String SERVIDOR = System.getProperty("servidor", "localhost:8080");
+
     public BancoClienteControlador() {
-        servicio = new WSEureka_Service();
+        try {
+            servicio = new WSEureka_Service(new URL("http://" + SERVIDOR + "/WS_EUREKA/WSEureka?wsdl"));
+        } catch (MalformedURLException e) {
+            throw new IllegalArgumentException("Servidor inválido: " + SERVIDOR, e);
+        }
         port = servicio.getWSEurekaPort();
     }
 
